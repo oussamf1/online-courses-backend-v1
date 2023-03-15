@@ -1,0 +1,55 @@
+{
+  "name": "express-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "14.17.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^15.0.3",
+    "base64-stream": "^1.0.0",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "config": "^3.3.6",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "date-fns": "^2.25.0",
+    "dotenv": "^10.0.0",
+    "easyinvoice": "^1.0.147",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.12.1",
+    "helmet": "^4.6.0",
+    "joi": "^17.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^5.13.3",
+    "morgan": "^1.10.0",
+    "nice-invoice": "^1.1.4",
+    "nodemailer": "^6.6.3",
+    "path": "^0.12.7",
+    "pdf-to-base64": "^1.0.3",
+    "pdfkit": "^0.12.3",
+    "stripe": "^8.168.0",
+    "validator": "^13.6.0",
+    "winston": "^3.3.3",
+    "winston-mongodb": "^5.0.7"
+  },
+  "devDependencies": {
+    "express-pino-logger": "^6.0.0",
+    "node-env-run": "^4.0.2",
+    "nodemon": "^2.0.12",
+    "npm-run-all": "^4.1.5",
+    "pino-colada": "^2.1.0"
+  }
+}

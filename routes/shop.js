@@ -1,0 +1,10 @@
+const express = require("express");
+const path = require("path");
+const shopServices = require("../middlawere/shop");
+const auth = require("../middlawere/auth");
+const bookingServices = require("../middlawere/bookingServices");
+const router = express.Router();
+router.get("/:id", shopServices.getCourse);
+router.get("/", shopServices.getAllCourses);
+router.get("/trial", shopServices.getTrialCourses);
+module.exports = router;

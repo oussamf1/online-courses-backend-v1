@@ -1,0 +1,13 @@
+const express = require("express");
+const user = require("../models/user");
+const auth2 = require("../middlawere/auth2");
+const auth = require("../middlawere/auth");
+const path = require("path");
+const formServices = require("../middlawere/checkoutForm");
+const bookingServices = require("../middlawere/bookingServices");
+const router = express.Router();
+router.post("/:id", auth2, formServices.fillForm);
+router.get("/:id", auth2, bookingServices.checkoutCourse);
+router.post("/cancelClass/:id", formServices.cancelDate);
+router.post("/changeDate", formServices.changeDate);
+module.exports = router;
